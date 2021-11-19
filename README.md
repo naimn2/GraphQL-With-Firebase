@@ -3,13 +3,17 @@
    ```
    npx nodemon -e html,js,css
    ```
+   atau,
+   ```
+   npm run start-dev
+   ```
 2. Jalankan emulator firebase:
    ```
-   firebase start:emulators
+   firebase emulators:start
    ```
+   atau,
+   ```
+   npm run fb-emu
+3. Buka web di http://localhost:5000 .
 ## Cara Buka GraphIQL
 Buka di browser http://localhost:5001/form-test-c78f7/us-central1/graphql
-## Abaikan
-```
-server.js
-```
