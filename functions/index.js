@@ -15,9 +15,9 @@ const Resolver = require("./resolver");
 const BookType = new GraphQLObjectType({
     name: "Book",
     fields: () => ({
-        id: { type: GraphQLNonNull(GraphQLInt) },
+        id: { type: GraphQLNonNull(GraphQLString) },
         name: { type: GraphQLNonNull(GraphQLString) },
-        authorId: { type: GraphQLNonNull(GraphQLInt) },
+        authorId: { type: GraphQLNonNull(GraphQLString) },
         author: {
             type: AuthorType,
             resolve: Resolver.bookTypeAuthor,
@@ -29,7 +29,7 @@ const BookType = new GraphQLObjectType({
 const AuthorType = new GraphQLObjectType({
     name: "Author",
     fields: () => ({
-        id: { type: GraphQLNonNull(GraphQLInt) },
+        id: { type: GraphQLNonNull(GraphQLString) },
         name: { type: GraphQLNonNull(GraphQLString) },
         address: { type: GraphQLNonNull(GraphQLString) },
         email: { type: GraphQLString },
@@ -60,7 +60,7 @@ const RootQueryType = new GraphQLObjectType({
             type: BookType,
             description: "Get A Book",
             args: {
-                id: { type: GraphQLInt }
+                id: { type: GraphQLString }
             },
             resolve: Resolver.getBook,
         },
@@ -68,7 +68,7 @@ const RootQueryType = new GraphQLObjectType({
             type: AuthorType,
             description: "Get A Author",
             args: {
-                id: { type: GraphQLInt }
+                id: { type: GraphQLString }
             },
             resolve: Resolver.getAuthor,
         }
@@ -84,7 +84,7 @@ const RootMutationType = new GraphQLObjectType({
             description: "Insert new book",
             args: {
                 name: { type: GraphQLNonNull(GraphQLString) },
-                authorId: { type: GraphQLNonNull(GraphQLInt) },
+                authorId: { type: GraphQLNonNull(GraphQLString) },
                 year: { type: GraphQLNonNull(GraphQLInt) },
             },
             resolve: Resolver.addBook,

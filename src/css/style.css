@@ -1,0 +1,125 @@
+* {
+    font-size: 1.15rem;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin: 0 0 20px 0;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.btn-submit {
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-primary {
+    background-color: rgb(211, 154, 49);
+    border: 2px solid rgba(121, 86, 21, 0);
+}
+
+.btn-primary:hover {
+    background-color: rgb(168, 120, 30);
+    border: 2px solid rgb(121, 86, 21);
+}
+
+.btn-secondary {
+    background-color: rgb(49, 114, 211);
+    border: 2px solid rgba(121, 86, 21, 0);
+}
+
+.btn-secondary:hover {
+    background-color: rgb(27, 74, 145);
+    border: 2px solid rgb(15, 47, 94);
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.center-horizontal {
+    margin: 0 auto;
+}
+
+.container {
+    padding: 40px;
+    width: 55%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: -3px -1px 46px -4px rgba(0, 0, 0, 0.53);
+    -webkit-box-shadow: -3px -1px 46px -4px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: -3px -1px 46px -4px rgba(0, 0, 0, 0.53);
+}
+
+.grid-two-col {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10%;
+}
+
+.label {
+    margin-top: 10px;
+    color: rgb(124, 112, 112);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input {
+    padding: 8px 12px;
+    border: none;
+    color: rgb(88, 88, 88);
+    background-color: rgb(228, 228, 228);
+    border-radius: 8px;
+}
+
+.my-bg-grad {
+    background: rgb(49,114,211);
+    background: linear-gradient(90deg, rgba(49,114,211,1) 40%, rgba(211,154,49,1) 60%);
+}
+
+.primary {
+    color: rgb(211, 154, 49);
+}
+
+.secondary {
+    color: rgb(49, 114, 211);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:hover {
+    background-color: #cacaca;
+}
