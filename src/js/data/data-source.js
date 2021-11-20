@@ -38,7 +38,33 @@ const DataSource = {
             }
         `;
         return request(CONFIG.GraphQL_EndPoint, query);
-    }
+    },
+    addAuthor(author) {
+        const { name, address, email } = author;
+        const query = gql`
+            mutation {
+                addAuthor(name:"${name}",address:"${address}",email:"${email}") {
+                    name
+                    address
+                    email
+                }
+            }
+        `;
+        return request(CONFIG.GraphQL_EndPoint, query);
+    },
+    addBook(author) {
+        const { name, authorId, year } = author;
+        const query = gql`
+            mutation {
+                addBook(name:"${name}",authorId:"${authorId}",year:${year}) {
+                    name
+                    authorId
+                    year
+                }
+            }
+        `;
+        return request(CONFIG.GraphQL_EndPoint, query);
+    },
 };
 
 export default DataSource;

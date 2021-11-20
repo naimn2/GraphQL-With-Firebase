@@ -28,7 +28,7 @@ h1 {
     border: 2px solid rgba(121, 86, 21, 0);
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active {
     background-color: rgb(168, 120, 30);
     border: 2px solid rgb(121, 86, 21);
 }
@@ -38,7 +38,7 @@ h1 {
     border: 2px solid rgba(121, 86, 21, 0);
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover, .btn-secondary:active {
     background-color: rgb(27, 74, 145);
     border: 2px solid rgb(15, 47, 94);
 }
