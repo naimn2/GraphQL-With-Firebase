@@ -9,7 +9,7 @@
    ```
 2. Jalankan emulator firebase:
    ```
-   firebase emulators:start
+   firebase emulators:start --import=emulatorData  --export-on-exit=emulatorData
    ```
    atau,
    ```
